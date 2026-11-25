@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 16 resources" deleteContents="true" description="Delete 16 resources" element1="/EjemplosParteComun" element10="/ParteComun" element11="/EjemplosPL" element12="/adda_v5" element13="/DatosCompartidos" element14="/EjemplosRecursivos" element15="/Parsers" element16="/Geneticos" element2="/SolveTest" element3="/EjemplosIterativosRecursivos" element4="/Solve" element5="/EjemplosAlgoritmos" element6="/EjemplosGeneticos" element7="/Grafos" element8="/EjemplosPracticas" element9="/EjemplosDeGrafos" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="16" stamp="1770891542916"/>
+</session>

@@ -1,0 +1,20 @@
+strict graph G {
+  1 [ color="black" label="int-7" ];
+  2 [ color="red" label="int-3" ];
+  3 [ color="red" label="int-5" ];
+  4 [ color="red" label="int-4" ];
+  5 [ color="black" label="int-9" ];
+  6 [ color="black" label="int-6" ];
+  7 [ color="red" label="int-2" ];
+  8 [ color="black" label="int-8" ];
+  9 [ color="red" label="int-1" ];
+  9 -- 7 [ color="red" ];
+  9 -- 4 [ color="red" ];
+  4 -- 3 [ color="red" ];
+  6 -- 5 [ color="black" ];
+  7 -- 2 [ color="red" ];
+  1 -- 5 [ color="black" ];
+  6 -- 1 [ color="black" ];
+  1 -- 8 [ color="black" ];
+  2 -- 3 [ color="red" ];
+}

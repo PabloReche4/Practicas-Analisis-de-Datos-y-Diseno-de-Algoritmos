@@ -1,0 +1,29 @@
+head section
+// Incluir los metodos necesarios, entre ellos:
+Integer getNumCandidatos()
+Integer getValoracion(Integer i)
+Boolean getSonIncompatibles(Integer i, Integer j)
+Integer getNumCualidades()
+Integer getPresupuestoMax()
+Double getSueldoMin(Integer i)
+Boolean getTieneCualidad(Integer i, Integer j)
+Integer n= getNumCandidatos()
+Integer m= getNumCualidades()
+Integer s = getPresupuestoMax()
+
+// ...
+// Definir las constantes necesarias con algunos metodos anteriores, entre ellas:
+Integer n = getNumCandidatos()
+
+goal section
+// decidir MAX/MIN y expresar como funcion lineal
+max sum (getValoracion(i) x[i], i in 0 .. n)
+
+constraints section
+// Seguir las restricciones del modelo y expresar como f. lineal
+sum(getSueldoMin(i) x[i], i in 0 .. n)<=s //sueldo maximo
+x[i]+x[j]<=1, i in 0 .. n, j in 0 .. n | getSonIncompatibles (i, j) //Incompatibilidades
+sum(x[i], i in 0 .. n| getTieneCualidad(i,j))>=1, j in 0 .. m //cualidades
+
+bin
+x[i], i in 0 .. n

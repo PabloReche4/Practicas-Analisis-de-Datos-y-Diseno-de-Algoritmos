@@ -1,0 +1,34 @@
+head section 
+
+Double getPrecioProd(Integer i) 
+Integer getNumProductos() 
+Integer getNumComponentes() 
+Integer getTiempoProdTotal() 
+Integer getTiempoElabTotal() 
+Integer getUnidadesComponente(Integer i, Integer j) 
+Integer getTiempoProdComp(Integer j) 
+Integer getTiempoElabComp(Integer j) 
+Integer getUnidsSemanaProd(Integer i) 
+Integer getTiempoProdProd(Integer i) 
+Integer getTiempoElabProd(Integer i) 
+Integer n = getNumProductos() 
+Integer m = getNumComponentes() 
+Integer A = getTiempoProdTotal() 
+Integer B = getTiempoElabTotal() 
+
+
+goal section
+ 
+max sum(getPrecioProd(i) x[i], i in 0 .. n) 
+
+constraints section 
+
+sum(getTiempoProdProd(i) x[i], i in 0 .. n) <= A 
+sum(getTiempoElabProd(i) x[i], i in 0 .. n) <= B 
+bounds section 
+
+x[i] <= getUnidsSemanaProd(i), i in 0 .. n 
+
+int 
+
+x[i], i in 0 .. n
